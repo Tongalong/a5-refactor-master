@@ -1,0 +1,13 @@
+$(document).ready(function(){
+	$(".box").hover(
+		function(){
+		    $(this).addClass(".banana");
+		},
+		function(){
+		    $(this).removeClass(".banana");	
+		}
+	);
+	$(".box").click(function(){
+		alert($(this).text());
+	});
+});
